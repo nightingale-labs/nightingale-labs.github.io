@@ -46,7 +46,7 @@ const Home: React.FC<{}> = () => {
             <Balloon />
           </div>
           <div className="flex flex-col ml-12">
-            <div className="text-5xl">Project Nightingale</div>
+            <div className="text-5xl">Nightingale Labs</div>
             <div className="text-3xl mt-6 w-3/4">
               {">"} advancing the science of data and visualization literacy
             </div>
@@ -71,7 +71,7 @@ const Home: React.FC<{}> = () => {
           }}
           className="text-2xl mx-4 md:mx-24"
         >
-          Project Nightingale is a multidisciplinary effort to advance the
+          Nightingale Labs is a multidisciplinary effort to advance the
           science of how people learn to reason about data. Our work aims to
           develop psychological theories that explain how learning takes place
           in authentic educational environments.

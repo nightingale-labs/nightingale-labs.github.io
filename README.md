@@ -1,4 +1,4 @@
-# Project Nightingale Website
+# Nightingale Labs Website
 
 # Quick deploy
 First, and just one time: make sure you have run `npm install`.

@@ -75,7 +75,7 @@ const Header = () => {
             <img src="/Untitled_Artwork_7.png" className="h-16" />
             <span className="mx-2 text-center my-auto text-2xl text-black">
               {" "}
-              Project Nightingale{" "}
+              Nightingale Labs{" "}
             </span>
           </div>
         ) : (
