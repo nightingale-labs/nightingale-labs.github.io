@@ -6,27 +6,27 @@ const Research: React.FC<{}> = () => {
       style={{
         fontFamily: "'Roboto Mono', monospace",
       }}
-      className="mx-auto flex flex-col space-y-6"
+      className="mx-auto flex flex-col space-y-6 max-w-10xl"
     >
-      <div className="">
+      <div>
         <h2 className="text-4xl mb-2">research</h2>
-        <div className="outline rounded p-2 bg-white">
-          {true && (
-            <div className="flex flex-wrap w-full h-full text-sm">
-              {researchPreviews.map((o) => {
-                return (
-                  <div className="bg-gray w-1/3 p-2 border-4 border-white flex flex-col text-sm">
-                    <img
-                      style={{ maxHeight: "40em" }}
-                      className="mx-auto my-auto rounded-sm"
-                      src={o.imgSrc}
-                      alt={o.imgAlt}
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          )}
+        <div className="outline rounded p-4 bg-white">
+          <div className="flex flex-col w-full space-y-8">
+            {researchPreviews.map((o) => (
+              <div
+                key={o.imgSrc}
+                className="bg-gray-100 rounded-lg p-4 border border-gray-200 flex flex-col items-center"
+              >
+                <img
+                  style={{ maxHeight: "20em" }}
+                  className="rounded-sm mb-4"
+                  src={o.imgSrc}
+                  alt={o.imgAlt}
+                />
+                <p className="text-base text-gray-800 text-left">{o.abstract}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

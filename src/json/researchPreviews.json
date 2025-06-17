@@ -1,17 +1,20 @@
 [
     {   
         "id": "gcb",
-        "imgSrc": "public/research_posters/gcb.png",
-        "imgAlt": "Analyzing response consistency between humans and models"
+        "imgSrc": "/research_posters/gcb.png",
+        "imgAlt": "Analyzing response consistency between humans and models",
+        "abstract": "We want to help everyone acquire the visualization literacy skills they need to understand the various plots, charts, and graphs they might encounter. To do that, we need to know how to measure data visualization literacy. There are a few different tests out there, including VLAT (Lee, Kim, & Kwon, 2016) and GGR (Galesic & Garcia-Retamero, 2011). The goal of our study was to understand if these two tests measure the same skills. To find out, we recruited U.S. adults (N=1,113) to complete both tests in one sitting. We found that people who did well on one test also often did well on the other one (r=0.56). So maybe both tests do measure the same or similar underlying skills? And if so, what are those skills? It would be convenient if these skills corresponded to things like 'the ability to read a bar plot' or 'the ability to find extrema.' But our analyses revealed that it's not so simple. Just knowing what kind of graph is being shown (e.g., bar plot) or knowing what kind of question is being asked (e.g., 'Can you find the maximum value?') is not enough to explain why a person got some questions right and other questions wrong. We used exploratory factor analysis to identify alternative ways of carving up 'data visualization literacy' and the latent factors we discovered did a much better job of accounting for the pattern of mistakes that people made. But interpreting what these factors are remains challenging, and we think that is mostly due to limitations of these tests (i.e., too many variables confounded and not enough questions). The upshot is that more work needs to be done to develop unified, reliable, and interpretable measures of data visualization literacy."
     },
     {   
         "id": "chart6",
-        "imgSrc": "public/research_posters/chart6.png",
-        "imgAlt": "Analyzing response consistency between humans and models"
+        "imgSrc": "/research_posters/chart6.png",
+        "imgAlt": "Analyzing response consistency between humans and models",
+        "abstract":""
     },
     {   
         "id": "solds",
-        "imgSrc": "public/research_posters/solds.png",
-        "imgAlt": "Analyzing response consistency between humans and models"
+        "imgSrc": "/research_posters/solds.png",
+        "imgAlt": "Analyzing response consistency between humans and models",
+        "abstract":""
     }
 ]
