@@ -30,6 +30,18 @@
     "imageUrl": "/people/brockbankE.jpg"
   },
   {
+    "name": "Kushin Mukherjee",
+    "affiliation": "Stanford University",
+    "website": "https://www.kushinm.com/",
+    "imageUrl": "/people/mukherjeeK.png"
+  },
+  {
+    "name": "Alexa Tartaglini",
+    "affiliation": "Stanford University",
+    "website": "https://www.alexatartaglini.com/",
+    "imageUrl": "/people/tartagliniA.png"
+  },
+  {
     "name": "Arnav Verma",
     "affiliation": "Stanford University",
     "website": "https://arnavverma.com/",

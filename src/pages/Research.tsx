@@ -15,15 +15,17 @@ const Research: React.FC<{}> = () => {
             {researchPreviews.map((o) => (
               <div
                 key={o.imgSrc}
-                className="bg-gray-100 rounded-lg p-4 border border-gray-200 flex flex-col items-center"
+                className="bg-gray-100 rounded-lg p-4 border border-gray-200 mb-4"
               >
+                <span className="font-bold text-2xl mb-2 block">{o.title}</span>
                 <img
-                  style={{ maxHeight: "20em" }}
-                  className="rounded-sm mb-4"
+                  style={{ maxHeight: "16em", float: "left", marginRight: "1.5rem", marginBottom: "1rem",marginTop: "1rem"}}
+                  className="rounded-sm"
                   src={o.imgSrc}
                   alt={o.imgAlt}
                 />
                 <p className="text-base text-gray-800 text-left">{o.abstract}</p>
+                <div style={{ clear: "both" }} />
               </div>
             ))}
           </div>
