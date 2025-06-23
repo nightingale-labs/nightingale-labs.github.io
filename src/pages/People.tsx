@@ -16,19 +16,19 @@ const People: React.FC = () => {
       style={{
         fontFamily: "'Roboto Mono', monospace",
       }}
-      className="mx-auto flex flex-col space-y-8"
+      className="mx-auto flex flex-col space-y-8 max-w-screen-2xl"
     >
-      <div>
+      <div className="px-10">
         <h2 className="text-5xl mb-4">research team</h2>
-        <div className="border-2 border-black bg-white rounded-lg mb-12 grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
+        <div className="border-2 border-black bg-white rounded-lg mb-12 grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-6 justify-items-center">
           {researchTeam.map((person, idx) => (
             <PersonPortrait person={{ ...person, id: idx + 200 }} key={idx + 200} />
           ))}
         </div>
       </div>
-      <div>
+      <div className="px-10">
         <h2 className="text-5xl mb-4">advisory board</h2>
-        <div className="border-2 border-black bg-white rounded-lg grid grid-cols-1 md:grid-cols-4 gap-8 p-4">
+        <div className="border-2 border-black bg-white rounded-lg grid grid-cols-1 md:grid-cols-4 gap-8 px-8 py-6 justify-items-center">
           {advisoryBoard.map((person, idx) => (
             <PersonPortrait person={{ ...person, id: idx + 100 }} key={idx + 100} />
           ))}

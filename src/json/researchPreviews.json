@@ -37,7 +37,7 @@
         "id": "dsp-solds",
         "title": "Linking student psychological orientation, engagement, and learning in college-level introductory data science",
         "tagline": "What learning environments help people acquire data literacy?",
-        "imgSrc": "/research_posters/dsp-solds.png",
+        "imgSrc": "/research_posters/solds.png",
         "imgAlt": "tmp",
         "abstract": "Data literacy helps people make sense of a complex and unpredictable world. Obviously, people are not born knowing how to draw well calibrated inferences from quantitative evidence. Instead, they (are meant to) acquire these skills in school. Without these skills, people are more vulnerable to misinformation, mis-estimate risks, and make poorer decisions. But the current status quo in statistics and data science education falls far short of what is needed in a world full of data and still rife with uncertainty. Our goal is to conduct studies that interrogate the broad array of factors that predict student success in college-level statistics and data science courses. We are partnering with CourseKata, which develops a digital learning platform, to track over a thousand students across dozens of institutions as they develop their statistical reasoning skills over the course of an academic term. These fine-grained, longitudinal student data will help link the 'micro-scale' decisions that students make, moment-to-moment — such as whether to persist with one activity or move on — with the 'macro-scale' outcomes that impact what knowledge and skills they take away from these courses."
     }

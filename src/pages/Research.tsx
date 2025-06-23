@@ -8,7 +8,7 @@ const Research: React.FC<{}> = () => {
       }}
       className="mx-auto flex flex-col space-y-6 max-w-10xl"
     >
-      <div>
+      <div className="max-w-screen-2xl mx-auto px-10">
         <h2 className="text-5xl mb-4">research</h2>
         <div className="border-2 border-black rounded p-4 bg-white">
           <div className="flex flex-col w-full space-y-8">
@@ -35,5 +35,6 @@ const Research: React.FC<{}> = () => {
     </div>
   );
 };
+
 
 export default Research;
