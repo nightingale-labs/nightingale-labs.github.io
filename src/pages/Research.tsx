@@ -27,8 +27,20 @@ const Research: React.FC<{}> = () => {
                 />
                 <p className="text-lg text-gray-800 text-left">{o.abstract}</p>
                 <div style={{ clear: "both" }} />
-                <div className="mt-4 mx-auto text-center w-3/4"><a  href={o.pdf_link} target="_blank" rel="noopener noreferrer" className="text-yellow-600 hover:underline"> {o.ref + " "}<i>{o.publication_venue}</i> [pdf] </a></div>
-              </div>
+                <div
+                  className="mt-4 mx-auto text-center"
+                  style={{ width: "80%" }}
+                >
+                  <a
+                    href={o.pdf_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl text-yellow-600 hover:underline"
+                  >
+                    {o.ref + " "}
+                    <i>{o.publication_venue}</i> [pdf]
+                  </a>
+                </div></div>
             ))}
           </div>
         </div>
