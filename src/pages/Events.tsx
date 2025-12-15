@@ -47,28 +47,18 @@ const Events: React.FC<{}> = () => {
 
           {/* Video Talks Section */}
           <div className="flex flex-col w-full space-y-2 mt-8">
-            <h3 className="text-2xl font-bold">Talks</h3>
+            <h3 className="text-2xl font-bold">highlights & edited recordings </h3>
             {videos.map((video, index) => (
+              
               <div
                 key={index}
                 className="bg-gray-100 rounded-lg px-10 py-2 border border-gray-200 flex flex-row items-center hover:border-blue-500 hover:border-2 transition-all"
               >
-                <div className="flex flex-col w-2/3 pr-6">
-                  <span className="font-bold text-xl mb-1">{video.talkTitle}</span>
-                  <a
-                    href={video.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg text-blue-600 hover:underline"
-                  >
-                    {video.speaker}
-                  </a>
-                </div>
                 <a
                   href={video.videoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/3 flex-shrink-0 relative group"
+                  className="w-1/4 flex-shrink-0 relative group"
                 >
                   <img
                     src={`https://img.youtube.com/vi/${getYouTubeVideoId(video.videoUrl)}/mqdefault.jpg`}
@@ -86,6 +76,18 @@ const Events: React.FC<{}> = () => {
                     </svg>
                   </div>
                 </a>
+                <div className="flex flex-col w-2/3 pr-6 ml-8">
+                  <span className="font-bold text-xl mb-1">{video.talkTitle}</span>
+                  <a
+                    href={video.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg text-blue-600 hover:underline"
+                  >
+                    {video.speaker}
+                  </a>
+                </div>
+                
               </div>
             ))}
           </div>
