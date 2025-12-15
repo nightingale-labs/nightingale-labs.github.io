@@ -1,0 +1,18 @@
+[
+    {
+    "name": "Kushin Mukherjee",
+    "affiliation": "Stanford University",
+    "website": "https://www.kushinm.com/",
+    "imageUrl": "/people/mukherjeeK.jpeg",
+    "title": "What Makes Different Graphs Effective for Answering Different Questions?",
+    "videoUrl": "https://www.youtube.com/watch?v=o_Kth8cM8w8&list=PL0EXhBp482qF9fHNn9cSezEE1xBBzMPXe"
+  },
+ {
+    "name": "Alexa Tartaglini",
+    "affiliation": "Stanford University",
+    "website": "https://www.alexatartaglini.com/",
+     "imageUrl": "/people/mukherjeeK.jpeg",
+     "title": "Diagnosing Bottlenecks in Data Visualization Understanding by VLMs",
+    "videoUrl": "https://www.youtube.com/watch?v=Pcf33vVAqJo&list=PL0EXhBp482qF9fHNn9cSezEE1xBBzMPXe&index=2"
+    }
+]
