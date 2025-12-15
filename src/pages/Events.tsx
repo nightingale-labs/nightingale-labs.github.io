@@ -51,7 +51,7 @@ const Events: React.FC<{}> = () => {
             {videos.map((video, index) => (
               <div
                 key={index}
-                className="bg-gray-100 rounded-lg px-10 py-2 border border-gray-200 flex flex-row items-center"
+                className="bg-gray-100 rounded-lg px-10 py-2 border border-gray-200 flex flex-row items-center hover:border-blue-500 hover:border-2 transition-all"
               >
                 <div className="flex flex-col w-2/3 pr-6">
                   <span className="font-bold text-xl mb-1">{video.talkTitle}</span>
@@ -68,13 +68,23 @@ const Events: React.FC<{}> = () => {
                   href={video.videoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/3 flex-shrink-0"
+                  className="w-1/3 flex-shrink-0 relative group"
                 >
                   <img
                     src={`https://img.youtube.com/vi/${getYouTubeVideoId(video.videoUrl)}/mqdefault.jpg`}
-                    alt={video.title}
-                    className="w-full h-auto rounded hover:opacity-80 transition-opacity"
+                    alt={video.talkTitle}
+                    className="w-full h-auto rounded"
                   />
+                  {/* Play button overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all rounded">
+                    <svg
+                      className="w-16 h-16 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
                 </a>
               </div>
             ))}
