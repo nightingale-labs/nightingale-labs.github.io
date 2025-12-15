@@ -46,7 +46,7 @@ const Events: React.FC<{}> = () => {
           </div>
 
           {/* Video Talks Section */}
-          <div className="flex flex-col w-full space-y-4 mt-8">
+          <div className="flex flex-col w-full space-y-2 mt-8">
             <h3 className="text-2xl font-bold">Talks</h3>
             {videos.map((video, index) => (
               <div
@@ -54,14 +54,14 @@ const Events: React.FC<{}> = () => {
                 className="bg-gray-100 rounded-lg px-10 py-2 border border-gray-200 flex flex-row items-center"
               >
                 <div className="flex flex-col w-2/3 pr-6">
-                  <span className="font-bold text-2xl mb-1">{video.title}</span>
+                  <span className="font-bold text-xl mb-1">{video.talkTitle}</span>
                   <a
                     href={video.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xl text-blue-600 hover:underline"
+                    className="text-lg text-blue-600 hover:underline"
                   >
-                    {video.name}
+                    {video.speaker}
                   </a>
                 </div>
                 <a
