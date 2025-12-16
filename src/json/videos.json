@@ -1,0 +1,72 @@
+[
+    {
+    "speaker": "Cindy Xiong Bearfield",
+    "affiliation": "Georgia Tech",
+    "website": "https://cyxiong.com/",
+    "talkTitle": "Designs to Support Better Visual Data Communication",
+    "videoUrl": "https://www.youtube.com/watch?v=iqEpzZG3aAE"
+    },
+    {
+    "speaker": "Elisa Kreiss",
+    "affiliation": "UCLA",
+    "website": "https://www.coalas-lab.com/",
+    "talkTitle": "Emerging Strategies for Writing Accessibility Descriptions for Data Visualizations",
+    "videoUrl": "https://www.youtube.com/watch?v=WwpRLAnXfVU"
+    }, 
+    {
+    "speaker": "Benjamin Motz",
+    "affiliation": "Indiana University",
+    "website": "https://bmotz.github.io/",
+    "talkTitle": "How Visualizations of Uncertainty in Ratings Data Affect Choice",
+    "videoUrl": "https://www.youtube.com/watch?v=PGRq4qN1m1Q"
+    },
+    {
+    "speaker": "Kushin Mukherjee",
+    "affiliation": "Stanford University",
+    "website": "https://www.kushinm.com/",
+    "talkTitle": "What Makes Different Graphs Effective for Answering Different Questions?",
+    "videoUrl": "https://www.youtube.com/watch?v=o_Kth8cM8w8"
+  },
+{
+    "speaker": "Josh Pollock",
+    "affiliation": "MIT",
+    "website": "https://joshmpollock.com/",
+    "talkTitle": "GoFish: A Grammar of More Graphics",
+    "videoUrl": "https://www.youtube.com/watch?v=fuyZkfUBrCw"
+    },
+{
+    "speaker": "Ji Y. Son and Jim Stigler",
+    "affiliation": "",
+    "website": "",
+    "talkTitle": "Building Communities to Study and Improve Learning in Complex Domains",
+    "videoUrl": "https://www.youtube.com/watch?v=erTkDbY5guc"
+    },
+ {
+    "speaker": "Alexa Tartaglini",
+    "affiliation": "Stanford University",
+    "website": "https://www.alexatartaglini.com/",
+    "talkTitle": "Diagnosing Bottlenecks in Data Visualization Understanding by VLMs",
+    "videoUrl": "https://www.youtube.com/watch?v=Pcf33vVAqJo"
+    },
+{
+    "speaker": "Arnav Verma",
+    "affiliation": "Stanford University",
+    "website": "https://arnavverma.com/",
+    "talkTitle": "Human Centered Evaluation of Data Visualization Understanding in Vision Language Models",
+    "videoUrl": "https://www.youtube.com/watch?v=B-ndlwrTNXU"
+    },
+ {
+    "speaker": "Alice Xu",
+    "affiliation": "UCLA",
+    "website": "https://scholar.google.com/citations?user=e6oxluoAAAAJ&hl=en",
+    "talkTitle": "From Construction Workers to Architects",
+    "videoUrl": "https://www.youtube.com/watch?v=EDGa1KC0F9w"
+    },
+ {
+    "speaker": "Kristine Zheng",
+    "affiliation": "Stanford University",
+    "website": "https://kristinezheng.github.io/",
+    "talkTitle": "Student mindset, engagement, and learning outcomes in introductory data science",
+    "videoUrl": "https://www.youtube.com/watch?v=00v_Ry-QEwU"
+    }
+]

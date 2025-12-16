@@ -1,4 +1,11 @@
 import events from "../json/events.json";
+import videos from "../json/videos.json";
+
+// Helper function to extract YouTube video ID from URL
+const getYouTubeVideoId = (url: string): string => {
+  const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\s]+)/);
+  return match ? match[1] : '';
+};
 
 const Events: React.FC<{}> = () => {
   return (
@@ -34,6 +41,53 @@ const Events: React.FC<{}> = () => {
                   className="text-lg text-gray-800 text-left event-description"
                   dangerouslySetInnerHTML={{ __html: event.description }}
                 ></p>
+              </div>
+            ))}
+          </div>
+
+          {/* Video Talks Section */}
+          <div className="flex flex-col w-full space-y-2 mt-8">
+            <h3 className="text-2xl font-bold">recorded talks</h3>
+            {videos.map((video, index) => (
+              
+              <div
+                key={index}
+                className="bg-gray-100 rounded-lg px-10 py-2 border border-gray-100 flex flex-row items-center hover:border-yellow-500 hover:border-2 transition-all w-1/2 mx-auto"
+              >
+                <a
+                  href={video.videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/4 flex-shrink-0 relative group"
+                >
+                  <img
+                    src={`https://img.youtube.com/vi/${getYouTubeVideoId(video.videoUrl)}/mqdefault.jpg`}
+                    alt={video.talkTitle}
+                    className="w-full h-auto rounded"
+                  />
+                  {/* Play button overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all rounded">
+                    <svg
+                      className="w-16 h-16 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </a>
+                <div className="flex flex-col w-2/3 pr-6 ml-8">
+                  <span className="font-bold text-xl mb-1">{video.talkTitle}</span>
+                  <a
+                    href={video.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg text-blue-600 hover:underline"
+                  >
+                    {video.speaker}
+                  </a>
+                </div>
+                
               </div>
             ))}
           </div>
