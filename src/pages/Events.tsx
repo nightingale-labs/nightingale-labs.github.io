@@ -47,12 +47,12 @@ const Events: React.FC<{}> = () => {
 
           {/* Video Talks Section */}
           <div className="flex flex-col w-full space-y-2 mt-8">
-            <h3 className="text-2xl font-bold">recorded talks</h3>
+            <h3 className="text-2xl font-bold">Talk Recordings</h3>
             {videos.map((video, index) => (
               
               <div
                 key={index}
-                className="bg-gray-100 rounded-lg px-10 py-2 border border-gray-100 flex flex-row items-center hover:border-yellow-500 hover:border-2 transition-all w-1/2 mx-auto"
+                className="bg-gray-200 rounded-lg px-10 py-2 border border-white flex flex-row items-center hover:border-yellow-500 hover:border-2 transition-all w-1/2 mx-auto"
               >
                 <a
                   href={video.videoUrl}
