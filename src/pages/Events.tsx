@@ -51,7 +51,9 @@ const Events: React.FC<{}> = () => {
                 />
 
                 {/* Video Talks Section */}
+                
                 <div className="flex flex-col w-full space-y-2 mt-8">
+                <h3 className="italic text-2xl mb-2 block">Talk Recordings</h3>
                   {videos.map((video, index) => (
                     <div
                       key={index}
