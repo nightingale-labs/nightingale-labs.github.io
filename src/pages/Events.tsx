@@ -17,16 +17,20 @@ const Events: React.FC<{}> = () => {
     >
       <div className="max-w-screen-2xl mx-auto px-10">
         <h2 className="text-5xl mb-4">events</h2>
+
         <div className="border-2 border-black rounded p-4 bg-white">
           <div className="flex flex-col w-full space-y-8">
             {events.map((event) => (
               <div
                 key={event.id}
-                className="bg-gray-100 rounded-lg px-10 py-4 border border-gray-200 mb-4"
+                className="bg-gray-100 rounded-lg px-10 py-4 border border-gray-200"
               >
+                {/* Event header */}
                 <div className="flex items-center space-x-3 mb-2">
-                  <span className="font-bold text-3xl block">{event.title}</span>
-                  {event.headerImages && event.headerImages.map((img, idx) => (
+                  <span className="font-bold text-3xl block">
+                    {event.title}
+                  </span>
+                  {event.headerImages?.map((img, idx) => (
                     <img
                       key={idx}
                       src={img}
@@ -36,58 +40,86 @@ const Events: React.FC<{}> = () => {
                     />
                   ))}
                 </div>
-                <span className="italic text-2xl mb-2 block">{event["date(s)"]}</span>
+
+                <span className="italic text-2xl mb-2 block">
+                  {event["date(s)"]}
+                </span>
+
                 <p
                   className="text-lg text-gray-800 text-left event-description"
                   dangerouslySetInnerHTML={{ __html: event.description }}
-                ></p>
-              </div>
-            ))}
-          </div>
+                />
 
-          {/* Video Talks Section */}
-          <div className="flex flex-col w-full space-y-2 mt-8">
-            <h3 className="text-2xl font-bold">Talk Recordings</h3>
-            {videos.map((video, index) => (
-              
-              <div
-                key={index}
-                className="bg-gray-200 rounded-lg px-10 py-2 border border-white flex flex-row items-center hover:border-yellow-500 hover:border-2 transition-all w-1/2 mx-auto"
-              >
-                <a
-                  href={video.videoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-1/4 flex-shrink-0 relative group"
-                >
-                  <img
-                    src={`https://img.youtube.com/vi/${getYouTubeVideoId(video.videoUrl)}/mqdefault.jpg`}
-                    alt={video.talkTitle}
-                    className="w-full h-auto rounded"
-                  />
-                  {/* Play button overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all rounded">
-                    <svg
-                      className="w-16 h-16 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
+                {/* Video Talks Section */}
+                <div className="flex flex-col w-full space-y-2 mt-8">
+                  {videos.map((video, index) => (
+                    <div
+                      key={index}
+                      className="bg-gray-200 rounded-lg px-10 py-2
+                                 border-2 border-white
+                                 flex flex-row items-center
+                                 hover:border-yellow-500
+                                 transition-all w-5/6 mx-auto"
                     >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </a>
-                <div className="flex flex-col w-2/3 pr-6 ml-8">
-                  <span className="font-bold text-xl mb-1">{video.talkTitle}</span>
-                  <a
-                    href={video.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg text-blue-600 hover:underline"
-                  >
-                    {video.speaker}
-                  </a>
+                      {/* Thumbnail */}
+                      <a
+                        href={video.videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-1/4 flex-shrink-0 relative group"
+                      >
+                        <img
+                          src={`https://img.youtube.com/vi/${getYouTubeVideoId(
+                            video.videoUrl
+                          )}/mqdefault.jpg`}
+                          alt={video.talkTitle}
+                          className="w-full h-auto rounded"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center
+                                        bg-black bg-opacity-0
+                                        group-hover:bg-opacity-40
+                                        transition-all rounded">
+                          <svg
+                            className="w-16 h-16 text-white opacity-0
+                                       group-hover:opacity-100
+                                       transition-opacity"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </div>
+                      </a>
+
+                      {/* Title + speakers */}
+                      <div className="flex flex-col flex-1 pr-6 ml-8">
+                        <span className="font-bold text-xl mb-1">
+                          {video.talkTitle}
+                        </span>
+
+                        <div className="text-lg">
+                          {video.speakers.map((speaker, idx) => (
+                            <span key={idx}>
+                              {speaker.website ? (
+                                <a
+                                  href={speaker.website}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-blue-600 hover:underline"
+                                >
+                                  {speaker.name}
+                                </a>
+                              ) : (
+                                <span>{speaker.name}</span>
+                              )}
+                              {idx < video.speakers.length - 1 && ", "}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                
               </div>
             ))}
           </div>
